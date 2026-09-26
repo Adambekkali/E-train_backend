@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://aws-1-eu-west-1.pooler.supabase.com:5432/postgres?user=postgres.zexwhfdphiajanfsinct&password=ETrain2026-2027
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none # Très important : on empêche Spring de modifier tes tables existantes
+    show-sql: true # Pratique pour voir les requêtes SQL dans la console pendant le dev
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
